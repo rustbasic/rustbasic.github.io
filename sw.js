@@ -1,4 +1,8 @@
-var cacheName = 'ezclip-pwa-v040';
+// ezclip Version: v0.5.0
+// NOTE: Change the version number above whenever you update the app. 
+// This ensures the browser detects the change in sw.js and triggers a Service Worker update.
+
+var cacheName = 'ezclip-pwa';
 var filesToCache = [
   './',
   './index.html',
@@ -17,6 +21,7 @@ self.addEventListener('install', function (e) {
   );
 });
 
+/* Clean up outdated caches and take control of all clients immediately */
 self.addEventListener('activate', function (e) {
   e.waitUntil(
     caches.keys().then(function (keyList) {
