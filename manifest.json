@@ -1,6 +1,6 @@
 {
-  "name": "ezClip PWA",
-  "short_name": "ezclip-pwa",
+  "name": "ezChat",
+  "short_name": "ezChat",
   "icons": [
     {
       "src": "./assets/icon-256.png",
