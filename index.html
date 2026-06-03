@@ -13,8 +13,8 @@
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from '/ezchat-346f85d8fb3cd112.js';
-const wasm = await init({ module_or_path: '/ezchat-346f85d8fb3cd112_bg.wasm' });
+import init, * as bindings from '/ezchat/ezchat-49536baeb9638ea.js';
+const wasm = await init({ module_or_path: '/ezchat/ezchat-49536baeb9638ea_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -24,9 +24,9 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
-    <base href="/" />
+    <base href="/ezchat/" />
 
-    <link rel="icon" href="/favicon-f402c8741ce815ec.ico" integrity="sha384-jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
+    <link rel="icon" href="/ezchat/favicon-f402c8741ce815ec.ico" integrity="sha384-jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
 
 
     
@@ -130,7 +130,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="/ezchat-346f85d8fb3cd112.js" crossorigin="anonymous" integrity="sha384-eVU+k/Ii7xyxn18RsRHi6lesu8l0nwYCdPTD9eqLbAO+njeEiX4TwFPsgSKPh8Oq"><link rel="preload" href="/ezchat-346f85d8fb3cd112_bg.wasm" crossorigin="anonymous" integrity="sha384-U3C59Ylm3QZbF05Ye9Xw6hDb8biW86VNFAt0zEQqllSX0tslvS6Y82B3oD7yLZe8" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/ezchat/ezchat-49536baeb9638ea.js" crossorigin="anonymous" integrity="sha384-nHYDO15CBTfUII1iqk2KeqNE2RR0hEm/IYsegEKXUnhGuo6ciZpFHL/Ab2VcNrHg"><link rel="preload" href="/ezchat/ezchat-49536baeb9638ea_bg.wasm" crossorigin="anonymous" integrity="sha384-QDS6XGAB0jxja2dwjdvXB918R/8lbv82sR3FpQcwlaQPthXvk4zeprJoyb1MJe8D" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
