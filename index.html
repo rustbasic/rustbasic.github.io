@@ -13,8 +13,8 @@
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from '/ezchat/ezchat-f1db0c940f0295b9.js';
-const wasm = await init({ module_or_path: '/ezchat/ezchat-f1db0c940f0295b9_bg.wasm' });
+import init, * as bindings from '/ezchat-139a845adfa1b232.js';
+const wasm = await init({ module_or_path: '/ezchat-139a845adfa1b232_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -24,9 +24,9 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
-    <base href="/ezchat/" />
+    <base href="/" />
 
-    <link rel="icon" href="/ezchat/favicon-f402c8741ce815ec.ico" integrity="sha384-jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
+    <link rel="icon" href="/favicon-f402c8741ce815ec.ico" integrity="sha384-jNOAE6jgE03LznIulCTVP6BH4NrTuROFjP9wj8bV1UUMJKtZAvstFpIAP3PDcFpx"/>
 
 
     
@@ -130,7 +130,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="/ezchat/ezchat-f1db0c940f0295b9.js" crossorigin="anonymous" integrity="sha384-I1NDwQrqFNOnD2kkFAJKuY4qT5mr7/lMYQXTKrzGBweI4xNsK5F3O5ve4TRBCUZJ"><link rel="preload" href="/ezchat/ezchat-f1db0c940f0295b9_bg.wasm" crossorigin="anonymous" integrity="sha384-SMIrNI3mJviPdwEGVbxgcn5QvmIbcoVqILQvZ2qMphnGBEEa7sYOrKJmyRU1x1k7" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/ezchat-139a845adfa1b232.js" crossorigin="anonymous" integrity="sha384-d7EVEEMpbBGjyimoPCccH6+CyVMa+/3NNWpggxEl3sqBbPp++0hmO8J5uhe9fpFf"><link rel="preload" href="/ezchat-139a845adfa1b232_bg.wasm" crossorigin="anonymous" integrity="sha384-HzXtsfFBDtiOaBrErCY4xhCVb7DRRYKQ3KnNGBhiClOagawClau0TPqkBQ8wjkXu" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
